@@ -1,0 +1,51 @@
+.note-container{
+    height: 100%;
+}
+.note-container h2{
+    margin-bottom: 20px;
+}
+.note-container_notes{
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    overflow-y: scroll;/*it will provide a vertical scrollbar if content overflows its specified height of 90%*/
+}
+.message{
+    margin-top: 15px;
+    font-size: 22px;
+}
+/*Responsive CSS*/
+@media only screen and (min-width: 865px) and (max-width:980px){
+    .note-container h2{
+        font-size: 25px;
+    }
+    .note-container_notes{
+        gap: 18px;
+    }
+    .message{
+        font-size: 21px;
+    }
+}
+@media only screen and (min-width: 703px) and (max-width:865px){
+    .note-container h2{
+        font-size: 24px;
+    }
+    .note-container_notes{
+        gap: 17px;
+    }
+    .message{
+        font-size: 21px;
+    }
+}
+@media only screen and (max-width:703px){
+    .note-container h2{
+        font-size: 23px;
+    }
+    .note-container_notes{
+        gap: 16px;
+    }
+    .message{
+        font-size: 21px;
+    }
+}

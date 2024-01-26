@@ -1,0 +1,88 @@
+.note{
+    padding: 25px;
+    height: 280px;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    background-color: blueviolet;
+    border-radius: 30px;
+}
+.note_text{
+    flex: 1;
+    resize: none;/*disables the resizing of the element. basically used in textarea element*/
+    background-color: transparent;
+    font-size: 1rem;
+    line-height: 1.875rem;
+    border: none;
+    outline: none;
+}
+.note_footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.note_footer img{
+    cursor: pointer;
+    opacity: 0;
+    transition: 300ms;
+    height: 22px;
+    width: 22px;
+}
+.note:hover .note_footer img{
+    opacity: 1;
+}
+/*Responsive CSS*/
+@media only screen and (min-width: 865px) and (max-width:980px){
+    .note{
+        padding: 20px;
+        height: 240px;
+        width: 220px;
+    }
+    .note_text{
+        font-size: 0.9rem;
+        line-height: 1.675rem;
+    }
+    .note_footer{
+        font-size: 14px;
+    }
+    .note_footer img{
+        height: 20px;
+        width: 20px;
+    }
+}
+@media only screen and (min-width: 703px) and (max-width:865px){
+    .note{
+        padding: 16px;
+        height: 210px;
+        width: 185px;
+    }
+    .note_text{
+        font-size: 0.8rem;
+        line-height: 1.475rem;
+    }
+    .note_footer{
+        font-size: 12px;
+    }
+    .note_footer img{
+        height: 18px;
+        width: 18px;
+    }
+}
+@media only screen and (max-width:703px){
+    .note{
+        padding: 14px;
+        height: 210px;
+        width: 170px;
+    }
+    .note_text{
+        font-size: 0.75rem;
+        line-height: 1.275rem;
+    }
+    .note_footer{
+        font-size: 11px;
+    }
+    .note_footer img{
+        height: 16px;
+        width: 16px;
+    }
+}

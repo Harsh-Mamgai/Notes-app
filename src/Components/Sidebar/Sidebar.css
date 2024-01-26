@@ -1,0 +1,57 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.sidebar img{
+    width: 60px;
+    cursor: pointer;
+}
+.sidebar_list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    height: 0;
+    transition: 0.8s;
+}
+.sidebar_list_active{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    transition: 0.8s;
+}
+.sidebar_list_item{
+    border-radius: 50%;
+    list-style: none;
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+}
+/*Responsive CSS*/
+@media only screen and (min-width: 865px) and (max-width:980px){
+    .sidebar img{
+        width: 53px;
+    }
+    .sidebar_list_active{
+        gap: 16px;
+    }
+}
+@media only screen and (min-width: 703px) and (max-width:865px){
+    .sidebar img{
+        width: 51px;
+    }
+    .sidebar_list_active{
+        gap: 14px;
+    }
+}
+@media only screen and (max-width:703px){
+    .sidebar img{
+        width: 50px;
+    }
+    .sidebar_list_active{
+        gap: 12px;
+    }
+}
